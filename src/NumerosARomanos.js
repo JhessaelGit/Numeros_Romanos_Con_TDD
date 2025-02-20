@@ -11,12 +11,20 @@ function NumerosDel1Al9(numero) {
   else if (numero === 9) numeroRomano = "IX";
   return numeroRomano;
 }
+
+function NumerosDel10Al90(numero) {
+  let numeroRomano = "";
+  if (numero >= 10 && numero <= 20)
+    numeroRomano = "X";
+  return numeroRomano;
+}
+
 function ConvertirARomanos(numero) {
   let numeroRomano = "";
   if (numero >= 1 && numero <= 9) {
     numeroRomano = NumerosDel1Al9(numero);
-  } else if (numero === 10) {
-    numeroRomano = "X";
+  } else if (numero >= 10) {
+    numeroRomano = NumerosDel10Al90(numero) + NumerosDel1Al9(numero % 10);
   }
 
   return numeroRomano;

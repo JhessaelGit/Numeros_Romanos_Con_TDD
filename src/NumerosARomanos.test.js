@@ -30,4 +30,7 @@ describe("Convertir a Numeros Romanos", () => {
     it("Deberia convetir el 10 en X", () => {
         expect(ConvertirARomanos(10)).toEqual("X");
     })
+    it("Deberia convetir el 13 en XIII", () => {
+        expect(ConvertirARomanos(13)).toEqual("XIII");
+    })
 })
