@@ -22,6 +22,7 @@ function NumerosDel10Al90(numero) {
   else if (numero >= 60 && numero < 70) numeroRomano = "LX";
   else if (numero >= 70 && numero < 80) numeroRomano = "LXX";
   else if (numero >= 80 && numero < 90) numeroRomano = "LXXX";
+  else if (numero >= 90) numeroRomano = "XC";
   return numeroRomano;
 }
 
