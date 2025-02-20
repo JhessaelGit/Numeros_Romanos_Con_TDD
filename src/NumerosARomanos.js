@@ -14,8 +14,8 @@ function NumerosDel1Al9(numero) {
 
 function NumerosDel10Al90(numero) {
   let numeroRomano = "";
-  if (numero >= 10 && numero <= 20)
-    numeroRomano = "X";
+  if (numero >= 10 && numero < 20) numeroRomano = "X";
+  else if (numero >= 20 && numero < 30) numeroRomano = "XX";
   return numeroRomano;
 }
 
