@@ -16,7 +16,9 @@ function ConvertirARomanos(numero)
         return "VII";
     else if(numero === 8)
         return "VIII";
-    
+    else if(numero === 9)
+        return "IX";
+
 }
 
 export default ConvertirARomanos;
