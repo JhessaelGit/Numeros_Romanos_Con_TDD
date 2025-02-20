@@ -33,6 +33,8 @@ function NumerosDel100Al900(numero) {
     else if (numero >= 300 && numero < 400) numeroRomano = "CCC";
     else if (numero >= 400 && numero < 500) numeroRomano = "CD";
     else if (numero >= 500 && numero < 600) numeroRomano = "D";
+    else if (numero >= 600 && numero < 700) numeroRomano = "DC";
+    else if (numero >= 700 && numero < 800) numeroRomano = "DCC";
     return numeroRomano;
 }
 

@@ -72,5 +72,12 @@ describe("Convertir a Numeros Romanos", () => {
     it("Deberia convetir el 500 en D", () => {
         expect(ConvertirARomanos(500)).toEqual("D");
     })
+    it("Deberia convetir el 600 en CD", () => {
+        expect(ConvertirARomanos(600)).toEqual("DC");
+    })
+    it("Deberia convetir el 700 en D", () => {
+        expect(ConvertirARomanos(700)).toEqual("DCC");
+    })
+    
     
 })
