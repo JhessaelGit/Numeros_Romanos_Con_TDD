@@ -29,6 +29,8 @@ function NumerosDel10Al90(numero) {
 function NumerosDel100Al900(numero) {
     let numeroRomano = "";
     if (numero >= 100 && numero < 200) numeroRomano = "C";
+    else if (numero >= 200 && numero < 300) numeroRomano = "CC";
+    else if (numero >= 300 && numero < 400) numeroRomano = "CCC";
     return numeroRomano;
 }
 

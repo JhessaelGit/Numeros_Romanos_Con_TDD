@@ -60,4 +60,11 @@ describe("Convertir a Numeros Romanos", () => {
     it("Deberia convetir el 100 en C", () => {
         expect(ConvertirARomanos(100)).toEqual("C");
     })
+    it("Deberia convetir el 200 en C", () => {
+        expect(ConvertirARomanos(200)).toEqual("CC");
+    })
+    it("Deberia convetir el 300 en C", () => {
+        expect(ConvertirARomanos(300)).toEqual("CCC");
+    })
+    
 })
