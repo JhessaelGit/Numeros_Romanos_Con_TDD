@@ -6,6 +6,8 @@ function ConvertirARomanos(numero)
         return "II";
     else if(numero === 3)
         return "III";
+    else if(numero === 4)
+        return "III";
 }
 
 export default ConvertirARomanos;
