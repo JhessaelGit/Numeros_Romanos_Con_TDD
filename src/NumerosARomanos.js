@@ -10,6 +10,8 @@ function ConvertirARomanos(numero)
         return "IV";
     else if(numero === 5)
         return "V";
+    else if(numero === 6)
+        return "VI";
 }
 
 export default ConvertirARomanos;
