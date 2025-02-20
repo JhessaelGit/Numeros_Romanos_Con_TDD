@@ -51,4 +51,7 @@ describe("Convertir a Numeros Romanos", () => {
     it("Deberia convetir el 70 en LX", () => {
         expect(ConvertirARomanos(70)).toEqual("LXX");
     })
+    it("Deberia convetir el 80 en LXXX", () => {
+        expect(ConvertirARomanos(80)).toEqual("LXXX");
+    })
 })
