@@ -35,6 +35,8 @@ function NumerosDel100Al900(numero) {
     else if (numero >= 500 && numero < 600) numeroRomano = "D";
     else if (numero >= 600 && numero < 700) numeroRomano = "DC";
     else if (numero >= 700 && numero < 800) numeroRomano = "DCC";
+    else if (numero >= 800 && numero < 900) numeroRomano = "DCCC";
+    else if (numero >= 900) numeroRomano = "CM";
     return numeroRomano;
 }
 
@@ -49,8 +51,9 @@ function ConvertirARomanos(numero) {
   else if (numero >= 100 && numero <= 900) {
     numeroRomano = NumerosDel100Al900(numero) + NumerosDel10Al90(numero % 100) + NumerosDel1Al9(numero % 10);
   }
-
-
+  else if (numero >= 1000) {
+    numeroRomano = "M";
+  }
   return numeroRomano;
 }
 
