@@ -79,13 +79,16 @@ describe("Convertir a Numeros Romanos", () => {
         expect(ConvertirARomanos(700)).toEqual("DCC");
     })
     it("Deberia convetir el 800 en D", () => {
-        expect(ConvertirARomanos(500)).toEqual("D");
+        expect(ConvertirARomanos(800)).toEqual("DCCC");
     })
     it("Deberia convetir el 900 en CM", () => {
-        expect(ConvertirARomanos(600)).toEqual("DC");
+        expect(ConvertirARomanos(900)).toEqual("CM");
     })
     it("Deberia convetir el 1000 en M", () => {
-        expect(ConvertirARomanos(700)).toEqual("DCC");
+        expect(ConvertirARomanos(1000)).toEqual("M");
+    })
+    it("Deberia convetir el 888 en DCCCLXXXVIII", () => {
+        expect(ConvertirARomanos(888)).toEqual("DCCCLXXXVIII");
     })
     
     
